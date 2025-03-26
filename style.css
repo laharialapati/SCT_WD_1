@@ -1,0 +1,115 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: #950740;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar a:hover {
+    color: #C3073F;
+}
+
+/* Navbar Indicator Effect */
+.nav-indicator {
+    position: absolute;
+    bottom: -5px;
+    width: 50px;
+    height: 4px;
+    background-color: #C3073F;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Sections Styling */
+.section {
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1A1A1D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Home Section Styling */
+#home h1 {
+    font-size: 3rem;
+    color: #C3073F;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+/* CTA Button */
+.cta-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #C3073F;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #950740;
+    transform: scale(1.1);
+}
+
+/* Navbar Shrink Effect on Scroll */
+.navbar.scrolled {
+    padding: 5px 0;
+    width: 70%;
+    background-color: #6F2232;
+}
